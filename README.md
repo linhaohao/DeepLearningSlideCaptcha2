@@ -122,3 +122,27 @@ Saving images:
 本项目仅供学习交流使用，请勿用于非法用途，本人不承担任何法律责任。
 
 如有侵权请联系个人删除，谢谢。
+
+## 踩坑记录
+pytorch分为CPU版和GPU版本
+### pytorch gpu版本安装
+https://zhuanlan.zhihu.com/p/106133822
+### pytorch 官网
+https://pytorch.org/get-started/locally/
+### cuda下载
+https://developer.nvidia.com/cuda-toolkit-archive
+### cudnn下载
+https://developer.nvidia.com/rdp/cudnn-download
+
+cuda-cudnn-pytorch
+1. cuda安装需要根据gpu的驱动版本进行安装
+2. gpu驱动版本查看：cmd输入nvidia-smi
+3. pytorch安装版本根据cuda版本进行选择
+
+cuda：11.7
+
+cudnn：cudnn-windows-x86_64-8.4.1.50_cuda11.6-archive.zip
+
+pytorch：1.12.0
+
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
